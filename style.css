@@ -11,10 +11,13 @@ body {
 @keyframes bg {
     0% {background-position: 0% 50%;}
     100% {background-position: 100% 50%;}
-}
-
 .container {
     padding: 30px;
+    max-width: 450px; /* حجم المحتوى ثابت */
+    margin: auto; /* يخلي المحتوى في النص */
+    background: rgba(255, 255, 255, 0.04); /* خلفية خفيفة شيك */
+    border-radius: 14px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.5);
 }
 
 .profile-img {
