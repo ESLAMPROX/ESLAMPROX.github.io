@@ -1,75 +1,90 @@
 body {
     margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    direction: rtl;
-    background: #0b1a35; /* كحلي غامق */
+    font-family: Arial, sans-serif;
     color: white;
+    text-align: center;
+    animation: bg 6s infinite alternate ease-in-out;
+    background: linear-gradient(120deg, #00132e, #00244d, #001b39);
+    background-size: 300% 300%;
+}
+
+@keyframes bg {
+    0% {background-position: 0% 50%;}
+    100% {background-position: 100% 50%;}
 }
 
 .container {
-    width: 90%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 40px;
+    padding: 30px;
+}
+
+.profile-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 3px solid #ffffffa4;
+    box-shadow: 0 0 18px rgba(255,255,255,0.5);
 }
 
 .name {
-    font-size: 60px;
-    color: black;
-    background: white;
-    padding: 8px 18px;
-    border-radius: 6px;
-    display: inline-block;
+    margin-top: 15px;
+    font-size: 32px;
+    font-weight: bold;
 }
 
-.about {
-    margin-top: 15px;
-    line-height: 1.9;
+.bio {
     font-size: 18px;
+    margin-top: 5px;
+    opacity: 0.9;
+}
+
+.info {
+    margin-top: 5px;
+    font-size: 16px;
+    opacity: 0.8;
 }
 
 .stats {
-    margin-top: 25px;
     display: flex;
-    gap: 25px;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 25px;
 }
 
 .box {
-    background: white;
-    color: black;
-    padding: 18px 28px;
-    border-radius: 8px;
-    text-align: center;
-    font-size: 18px;
-}
-
-.box span {
-    display: block;
-    font-size: 35px;
-    font-weight: bold;
-}
-
-.contact, .fb {
-    margin-top: 20px;
-    font-size: 18px;
-}
-
-.whatsapp {
-    color: #25D366;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.whatsapp:hover {
-    opacity: 0.7;
-}
-
-.image-box img {
-    width: 300px;
-    height: auto;
+    background: rgba(255,255,255,0.12);
+    padding: 15px 25px;
     border-radius: 12px;
-    border: 3px solid white;
+    backdrop-filter: blur(4px);
+}
+
+.box h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.box p {
+    font-size: 22px;
+    margin: 8px 0 0;
+    font-weight: bold;
+}
+
+.social {
+    margin-top: 35px;
+}
+
+.btn {
+    display: block;
+    background: #00ffbb;
+    color: #000;
+    margin: 10px auto;
+    width: 200px;
+    padding: 12px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #00d49d;
 }
