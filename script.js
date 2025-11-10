@@ -1,3 +1,5 @@
-console.log("Welcome to Eslam's Personal Website ✅");
-
-alert("اهلا بيك في موقع إسلام 😎🔥");
+document.body.style.opacity = 0;
+setTimeout(() => {
+  document.body.style.transition = "1.4s";
+  document.body.style.opacity = 1;
+}, 100);
