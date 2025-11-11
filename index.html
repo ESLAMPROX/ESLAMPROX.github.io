@@ -2,83 +2,52 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<title>صفحتي الشخصية</title>
+<title>ESLAMPROX</title>
+
+<!-- منع التكبير -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <style>
 
+/* الخلفية */
 body {
     background: #00132b;
     margin: 0;
     font-family: Arial, sans-serif;
     text-align: center;
+    overflow-x: hidden;
 }
 
-/* الكارت الأساسي */
-.card {
-    max-width: 400px;
+/* كل الكروت */
+.card, .my-work, .contact {
+    max-width: 380px;
     width: 95%;
     margin: 20px auto;
     background: #fff;
-    padding: 20px;
+    padding: 18px;
     border-radius: 14px;
+    box-shadow: 0 0 8px #00000044;
 }
 
 /* الصورة */
 .profile {
-    width: 120px;
-    height: 120px;
+    width: 115px;
+    height: 115px;
     border-radius: 50%;
     object-fit: cover;
+    border: 3px solid #00132b;
 }
 
-/* البيانات */
-.bio {
-    font-size: 17px;
-    margin-top: 10px;
+/* بيانات */
+.bio { font-size: 17px; margin-top: 8px; }
+.details { color: #555; margin: 4px 0 15px; }
+
+/* الأعمال */
+.my-work h3 {
+    margin-bottom: 10px;
 }
 
-.details {
-    color: #444;
-    margin: 5px 0 20px;
-}
-
-/* قسم احصائيات */
-.stats {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 0;
-}
-
-.box {
-    background: #00132b;
-    color: white;
-    padding: 15px;
-    border-radius: 10px;
-    width: 45%;
-}
-
-/* الأزرار */
-.buttons .btn {
-    display: block;
-    background: #00132b;
-    color: white;
-    text-decoration: none;
-    margin: 8px 0;
-    padding: 10px;
-    border-radius: 8px;
-}
-
-/* قسم أعمالي */
-.my-work {
-    max-width: 400px;
-    width: 95%;
-    margin: 20px auto;
-    background: #fff;
-    padding: 20px;
-    border-radius: 14px;
-}
-
-/* زر رابط العمل */
+/* زر البرنامج */
 .work-link {
     display: block;
     background: #00132b;
@@ -87,25 +56,29 @@ body {
     padding: 12px;
     border-radius: 10px;
     margin-top: 10px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.work-link:hover {
+    background: #003f7a;
+}
+
+/* وصف البرنامج */
+.program-desc {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #444;
 }
 
 /* تواصل معنا */
-.contact {
-    max-width: 400px;
-    width: 95%;
-    margin: 20px auto;
-    background: #fff;
-    padding: 20px;
-    border-radius: 14px;
-}
-
 .contact input,
 .contact textarea {
     width: 100%;
     padding: 8px;
     margin: 6px 0;
-    border: 1px solid #999;
-    border-radius: 5px;
+    border: 1px solid #888;
+    border-radius: 6px;
 }
 
 .contact button {
@@ -114,9 +87,24 @@ body {
     padding: 10px;
     width: 100%;
     border: none;
-    margin-top: 5px;
     border-radius: 6px;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact button:hover {
+    background: #003f7a;
+}
+
+/* منع السحب والتحديد */
+* {
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+/* منع الزوم */
+html, body {
+    touch-action: manipulation;
 }
 
 </style>
@@ -126,29 +114,40 @@ body {
 
 <!-- الكارت -->
 <div class="card">
-    <img src="profile.jpg" class="profile" alt="">
-    <h2>اسمك هنا</h2>
-    <p class="bio">نبذة بسيطة عنك</p>
-    <p class="details">مطور ويب | مصمم</p>
+    <img src="abc.jpg" class="profile" alt="صورتك">
+    <h2>ESLAMPROX</h2>
+    <p class="bio">مبرمج تطبيقات ومطور مواقع</p>
+    <p class="details">أهلاً بيك في موقعي الرسمي ✅</p>
 </div>
 
 <!-- قسم أعمالي -->
 <div class="my-work">
     <h3>أعمالي</h3>
-    <p>ده واحد من البرامج اللي عملتها:</p>
+    <p>اضغط للتحميل:</p>
 
-    <!-- رابط البرنامج PDF -->
-    <a class="work-link" href="your_pdf_link.pdf" target="_blank">فتح برنامج الـ PDF</a>
+    <!-- رابط التطبيق -->
+    <a class="work-link" href="https://github.com/ESLAMPROX/ESLAMPROX.github.io/releases/download/v1.0/PDF.SCANER.apk">
+        تحميل برنامج PDF Scanner
+    </a>
+
+    <p class="program-desc">برنامج تحويل من PDF إلى Word والعكس يعمل كـ APK 📱</p>
 </div>
 
 <!-- تواصل معنا -->
 <div class="contact">
-    <h3>تواصل معنا</h3>
+    <h3>تواصل معي</h3>
     <input type="text" placeholder="الاسم">
-    <input type="email" placeholder="البريد">
-    <textarea placeholder="الرسالة"></textarea>
+    <input type="text" placeholder="رقم الهاتف">
+    <textarea placeholder="اكتب رسالتك هنا..."></textarea>
     <button>إرسال</button>
 </div>
+
+<!-- JavaScript بسيط -->
+<script>
+document.querySelector("button").onclick = function() {
+    alert("تم إرسال رسالتك ✅");
+};
+</script>
 
 </body>
 </html>
