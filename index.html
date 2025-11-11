@@ -1,47 +1,153 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ESLAM</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>صفحتي الشخصية</title>
+
+<style>
+
+body {
+    background: #00132b;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* الكارت الأساسي */
+.card {
+    max-width: 400px;
+    width: 95%;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 14px;
+}
+
+/* الصورة */
+.profile {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* البيانات */
+.bio {
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.details {
+    color: #444;
+    margin: 5px 0 20px;
+}
+
+/* قسم احصائيات */
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.box {
+    background: #00132b;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 45%;
+}
+
+/* الأزرار */
+.buttons .btn {
+    display: block;
+    background: #00132b;
+    color: white;
+    text-decoration: none;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* قسم أعمالي */
+.my-work {
+    max-width: 400px;
+    width: 95%;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 14px;
+}
+
+/* زر رابط العمل */
+.work-link {
+    display: block;
+    background: #00132b;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* تواصل معنا */
+.contact {
+    max-width: 400px;
+    width: 95%;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 14px;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 6px 0;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+
+.contact button {
+    background: #00132b;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    margin-top: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+</style>
+
 </head>
 <body>
 
-<div class="container">
-    <div class="card">
-        <img src="abc.jpg" class="profile">
+<!-- الكارت -->
+<div class="card">
+    <img src="profile.jpg" class="profile" alt="">
+    <h2>اسمك هنا</h2>
+    <p class="bio">نبذة بسيطة عنك</p>
+    <p class="details">مطور ويب | مصمم</p>
+</div>
 
-        <h1>إسلام محمد</h1>
-        <p class="bio">🤚 مرحباً انا إسلام محمد <br> FRONT END WEB DEVELOPMENT (مطور الواجهات الأمامية للويب) 😎</p>
-        <p class="details">العمر: 15 سنة | البلد: مصر</p>
+<!-- قسم أعمالي -->
+<div class="my-work">
+    <h3>أعمالي</h3>
+    <p>ده واحد من البرامج اللي عملتها:</p>
 
-        <div class="stats">
-            <div class="box">
-                <h2>25</h2>
-                <p>عميل راضي</p>
-            </div>
+    <!-- رابط البرنامج PDF -->
+    <a class="work-link" href="your_pdf_link.pdf" target="_blank">فتح برنامج الـ PDF</a>
+</div>
 
-            <div class="box">
-                <h2>5 سنوات</h2>
-                <p>خبرة</p>
-            </div>
-        </div>
-
-        <div class="buttons">
-            <a href="https://wa.me/201224738170" target="_blank" class="btn">💬 واتساب</a>
-            <a href="tel:01224738170" class="btn">📞 اتصال هاتفي</a>
-            <a href="https://m.me/ESLAMPROX" target="_blank" class="btn">💙 ماسنجر</a>
-        </div>
-
-        <form class="contact">
-            <h3>ارسال رسالة / شكوى</h3>
-            <input type="text" placeholder="الاسم" required>
-            <input type="text" placeholder="رقم الهاتف" required>
-            <textarea placeholder="اكتب رسالتك هنا..." required></textarea>
-            <button type="submit">إرسال</button>
-        </form>
-    </div>
+<!-- تواصل معنا -->
+<div class="contact">
+    <h3>تواصل معنا</h3>
+    <input type="text" placeholder="الاسم">
+    <input type="email" placeholder="البريد">
+    <textarea placeholder="الرسالة"></textarea>
+    <button>إرسال</button>
 </div>
 
 </body>
