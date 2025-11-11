@@ -1,20 +1,107 @@
-<div class="page">
+<!DOCTYPE html>
+<html lang="ar" dir="RTL">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>ESLAMPROX</title>
 
-    <img src="abc.jpg" class="profile" alt="">
-    <h2 class="name">ESLAMPROX</h2>
-    <p class="bio">🤚مرحباً انا إسلام محمد مطور ويب وتطبيقات😎</p>
-    <p class="details">مصر - 15 سنة</p>
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  background: #00132b;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+}
 
-    <!-- قسم أعمالي -->
-    <h3 class="section-title">أعمالي</h3>
-    <a class="program-btn" href="https://github.com/ESLAMPROX/ESLAMPROX.github.io/releases/download/v1.0/PDF.SCANER.apk">
-        تحميل برنامج PDF Scanner
-    </a>
-    <p class="program-desc">برنامج تحويل من PDF إلى Word والعكس يعمل على موبايل بصيغة APK</p>
+.container {
+  background: #e5e5e5;
+  width: 92%;
+  max-width: 430px;
+  margin: 25px 0;
+  padding: 18px;
+  border-radius: 14px;
+  text-align: center;
+}
 
-    <!-- تواصل معي -->
-    <h3 class="section-title">تواصل معي</h3>
-    <a class="social-btn" href="https://wa.me/201224738170" target="_blank">💬 واتساب</a>
-    <a class="social-btn" href="https://facebook.com/ESLAMPROX" target="_blank">💙 فيسبوك</a>
+/* صورة البروفايل */
+.profile {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #00132b;
+}
+
+/* نصوص */
+h1 {
+  margin: 10px 0 5px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.bio {
+  font-size: 17px;
+  margin-top: 5px;
+  color: #222;
+}
+
+/* عناوين الأقسام */
+.section-title {
+  margin-top: 25px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+}
+
+/* زر */
+.btn {
+  display: block;
+  background: #00132b;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* منع الزوم */
+img, a, input, textarea, button {
+  touch-action: manipulation;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- صورة -->
+  <img src="abc.jpg" class="profile">
+
+  <h1>ESLAMPROX</h1>
+
+  <p class="bio">🤚مرحباً انا إسلام محمد مطور ويب وتطبيقات😎<br>مصر - 15 سنة</p>
+
+  <!-- أعمالي -->
+  <p class="section-title">أعمالي</p>
+
+  <a class="btn" href="https://github.com/ESLAMPROX/ESLAMPROX.github.io/releases/download/v1.0/PDF.SCANER.apk">
+    تحميل برنامج PDF Scanner
+  </a>
+
+  <p style="font-size:14px;color:#333;margin-top:6px;">
+    برنامج لتحويل من PDF إلى Word والعكس ويعمل على موبايل بصيغة APK ✅
+  </p>
+
+  <!-- تواصل -->
+  <p class="section-title">تواصل معي</p>
+
+  <a class="btn" href="https://wa.me/201224738170">واتساب 💬</a>
+  <a class="btn" href="https://facebook.com">فيسبوك 💙</a>
 
 </div>
+
+</body>
+</html>
