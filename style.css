@@ -82,35 +82,5 @@ body {
     margin-top: 5px;
     border-radius: 6px;
     cursor: pointer;
-.my-work {
-    text-align: center;
-    padding: 60px 20px;
-}
-
-.my-work h2 {
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 30px;
-}
-
-.project {
-    background: #ffffff20;
-    padding: 25px;
-    border-radius: 12px;
-    width: 70%;
-    margin: auto;
-    backdrop-filter: blur(4px);
-}
-
-.project h3 {
-    margin-bottom: 10px;
-}
-
-.btn {
-    display: inline-block;
-    text-decoration: none;
-    background: #007bff;
-    padding: 12px 20px;
-    color: white;
-    border-radius: 10px;
-}
+ {
+    
