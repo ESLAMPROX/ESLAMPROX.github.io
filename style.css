@@ -1,79 +1,66 @@
 body {
     background: #00132b;
     margin: 0;
-    padding: 0;
     font-family: Arial, sans-serif;
     text-align: center;
-    direction: rtl;
+    overflow-x: hidden;
 }
 
-/* الكارد (الصفحة البيضة) */
-.card {
-    max-width: 400px;
-    width: 92%; /* علشان يبان بس طرف بسيط كحلي من الجنب */
-    margin: 25px auto;
+/* كل الكروت */
+.card, .my-work, .contact {
+    max-width: 380px;
+    width: 95%;
+    margin: 20px auto;
     background: #fff;
-    padding: 20px;
+    padding: 18px;
     border-radius: 14px;
+    box-shadow: 0 0 8px #00000044;
 }
 
 /* الصورة */
 .profile {
-    width: 120px;
-    height: 120px;
+    width: 115px;
+    height: 115px;
     border-radius: 50%;
     object-fit: cover;
+    border: 3px solid #00132b;
 }
 
-/* كتابة */
-.bio {
-    font-size: 17px;
-    margin-top: 10px;
-}
+/* نصوص */
+.bio { font-size: 17px; margin-top: 8px; }
+.details { color: #555; margin: 4px 0 15px; }
 
-.details {
-    color: #444;
-    margin: 5px 0 20px;
-}
+/* قسم أعمالي */
+.my-work h3 { margin-bottom: 10px; }
 
-/* الإحصائيات */
-.stats {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 0;
-}
-
-.box {
-    background: #00132b;
-    color: white;
-    padding: 15px;
-    border-radius: 10px;
-    width: 45%;
-}
-
-/* أزرار */
-.buttons .btn {
+/* زر البرنامج */
+.work-link {
     display: block;
     background: #00132b;
     color: white;
     text-decoration: none;
-    margin: 8px 0;
-    padding: 10px;
-    border-radius: 8px;
+    padding: 12px;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+.work-link:hover { background: #003f7a; }
+
+.program-desc {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #444;
 }
 
-/* الفورم */
-.contact h3 {
-    margin-top: 25px;
-}
-
+/* تواصل معنا */
 .contact input,
 .contact textarea {
     width: 100%;
     padding: 8px;
     margin: 6px 0;
-    border: 1px solid #999;
-    border-radius: 5px;
+    border: 1px solid #888;
+    border-radius: 6px;
 }
 
 .contact button {
@@ -82,13 +69,15 @@ body {
     padding: 10px;
     width: 100%;
     border: none;
-    margin-top: 5px;
     border-radius: 6px;
     cursor: pointer;
+    transition: 0.3s;
 }
+.contact button:hover { background: #003f7a; }
 
-/* قسم أعمالي (هيظهر بعد ما نضيفه في HTML) */
-.my-work {
-    margin-top: 30px;
-    display: none; /* هنخليه يظهر لما نضيفه */
+/* منع التحديد والتكبير */
+* {
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
 }
+html, body { touch-action: manipulation; }
