@@ -2,152 +2,37 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<title>ESLAMPROX</title>
 
 <!-- منع التكبير -->
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-<style>
-
-/* الخلفية */
-body {
-    background: #00132b;
-    margin: 0;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    overflow-x: hidden;
-}
-
-/* كل الكروت */
-.card, .my-work, .contact {
-    max-width: 380px;
-    width: 95%;
-    margin: 20px auto;
-    background: #fff;
-    padding: 18px;
-    border-radius: 14px;
-    box-shadow: 0 0 8px #00000044;
-}
-
-/* الصورة */
-.profile {
-    width: 115px;
-    height: 115px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #00132b;
-}
-
-/* بيانات */
-.bio { font-size: 17px; margin-top: 8px; }
-.details { color: #555; margin: 4px 0 15px; }
-
-/* الأعمال */
-.my-work h3 {
-    margin-bottom: 10px;
-}
-
-/* زر البرنامج */
-.work-link {
-    display: block;
-    background: #00132b;
-    color: white;
-    text-decoration: none;
-    padding: 12px;
-    border-radius: 10px;
-    margin-top: 10px;
-    font-size: 15px;
-    transition: 0.3s;
-}
-
-.work-link:hover {
-    background: #003f7a;
-}
-
-/* وصف البرنامج */
-.program-desc {
-    margin-top: 8px;
-    font-size: 14px;
-    color: #444;
-}
-
-/* تواصل معنا */
-.contact input,
-.contact textarea {
-    width: 100%;
-    padding: 8px;
-    margin: 6px 0;
-    border: 1px solid #888;
-    border-radius: 6px;
-}
-
-.contact button {
-    background: #00132b;
-    color: white;
-    padding: 10px;
-    width: 100%;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.contact button:hover {
-    background: #003f7a;
-}
-
-/* منع السحب والتحديد */
-* {
-    -webkit-user-select: none;
-    -webkit-touch-callout: none;
-}
-
-/* منع الزوم */
-html, body {
-    touch-action: manipulation;
-}
-
-</style>
-
+<title>ESLAMPROX</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- الكارت -->
-<div class="card">
-    <img src="abc.jpg" class="profile" alt="صورتك">
-    <h2>ESLAMPROX</h2>
-    <p class="bio">مبرمج تطبيقات ومطور مواقع</p>
-    <p class="details">أهلاً بيك في موقعي الرسمي ✅</p>
-</div>
+<div class="page">
 
-<!-- قسم أعمالي -->
-<div class="my-work">
-    <h3>أعمالي</h3>
-    <p>اضغط للتحميل:</p>
+    <!-- الصورة والاسم -->
+    <img src="abc.jpg" class="profile" alt="">
+    <h2 class="name">ESLAMPROX</h2>
+    <p class="bio">مبرمج تطبيقات | مطور مواقع ويب</p>
+    <p class="details">مصر - 15 سنة</p>
 
-    <!-- رابط التطبيق -->
-    <a class="work-link" href="https://github.com/ESLAMPROX/ESLAMPROX.github.io/releases/download/v1.0/PDF.SCANER.apk">
+    <!-- قسم أعمالي -->
+    <h3 class="section-title">أعمالي</h3>
+    <a class="program-btn" href="https://github.com/ESLAMPROX/ESLAMPROX.github.io/releases/download/v1.0/PDF.SCANER.apk">
         تحميل برنامج PDF Scanner
     </a>
+    <p class="program-desc">برنامج تحويل من PDF إلى Word والعكس يعمل على موبايل بصيغة APK 📱</p>
 
-    <p class="program-desc">برنامج تحويل من PDF إلى Word والعكس يعمل كـ APK 📱</p>
+    <!-- تواصل -->
+    <h3 class="section-title">تواصل معي</h3>
+
+    <a class="social-btn" href="https://wa.me/201224738170" target="_blank">💬 واتساب</a>
+    <a class="social-btn" href="https://facebook.com/ESLAMPROX" target="_blank">💙 فيسبوك</a>
+
 </div>
-
-<!-- تواصل معنا -->
-<div class="contact">
-    <h3>تواصل معي</h3>
-    <input type="text" placeholder="الاسم">
-    <input type="text" placeholder="رقم الهاتف">
-    <textarea placeholder="اكتب رسالتك هنا..."></textarea>
-    <button>إرسال</button>
-</div>
-
-<!-- JavaScript بسيط -->
-<script>
-document.querySelector("button").onclick = function() {
-    alert("تم إرسال رسالتك ✅");
-};
-</script>
 
 </body>
 </html>
