@@ -1,19 +1,25 @@
-body {
+
+
+* {
   margin: 0;
   padding: 0;
-  background: #00132b;
+  box-sizing: border-box;
+  touch-action: manipulation;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
   font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
+  background: #ffffff;
 }
 
 .container {
-  background: #e5e5e5;
-  width: 92%;
+  width: 100%;
   max-width: 430px;
-  margin: 25px 0;
-  padding: 18px;
-  border-radius: 14px;
+  margin: auto;
+  padding: 20px;
   text-align: center;
 }
 
@@ -23,22 +29,24 @@ body {
   border-radius: 50%;
   object-fit: cover;
   border: 4px solid #00132b;
+  margin-top: 10px;
 }
 
 h1 {
-  margin: 10px 0 5px;
-  font-size: 25px;
+  font-size: 24px;
+  margin-top: 10px;
   font-weight: bold;
+  color: #000;
 }
 
 .bio {
-  font-size: 17px;
-  margin-top: 5px;
-  color: #222;
+  font-size: 16px;
+  color: #333;
+  margin-top: 6px;
 }
 
 .section-title {
-  margin-top: 25px;
+  margin-top: 30px;
   font-size: 20px;
   font-weight: bold;
   color: #000;
@@ -46,21 +54,19 @@ h1 {
 
 .btn {
   display: block;
+  width: 100%;
   background: #00132b;
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
-  padding: 12px;
+  padding: 14px;
   border-radius: 8px;
-  margin-top: 10px;
+  margin-top: 12px;
   font-size: 16px;
+  font-weight: bold;
 }
 
 .desc {
   font-size: 14px;
-  color: #333;
-  margin-top: 6px;
-}
-
-img, a, input, textarea, button {
-  touch-action: manipulation;
+  color: #444;
+  margin-top: 8px;
 }
