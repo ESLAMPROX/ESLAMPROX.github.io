@@ -1,5 +1,3 @@
-document.body.style.opacity = 0;
-setTimeout(() => {
-  document.body.style.transition = "1.4s";
-  document.body.style.opacity = 1;
-}, 100);
+document.getElementById("sendBtn").onclick = function() {
+    alert("✅ تم إرسال رسالتك بنجاح");
+};
