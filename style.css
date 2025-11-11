@@ -1,20 +1,23 @@
 body {
     background: #00132b;
     margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
     text-align: center;
     direction: rtl;
 }
 
+/* الكارد (الصفحة البيضة) */
 .card {
     max-width: 400px;
-    width: 95%; /* عشان يسيب حبة بسيطة من الجنبين */
-    margin: 20px auto; /* توسيط الكارت */
+    width: 92%; /* علشان يبان بس طرف بسيط كحلي من الجنب */
+    margin: 25px auto;
     background: #fff;
     padding: 20px;
     border-radius: 14px;
 }
 
+/* الصورة */
 .profile {
     width: 120px;
     height: 120px;
@@ -22,6 +25,7 @@ body {
     object-fit: cover;
 }
 
+/* كتابة */
 .bio {
     font-size: 17px;
     margin-top: 10px;
@@ -32,6 +36,7 @@ body {
     margin: 5px 0 20px;
 }
 
+/* الإحصائيات */
 .stats {
     display: flex;
     justify-content: space-between;
@@ -45,12 +50,8 @@ body {
     border-radius: 10px;
     width: 45%;
 }
-.container {
-    max-width:200px;
-    margin: 0 auto;
-    padding: 20px;
-}
 
+/* أزرار */
 .buttons .btn {
     display: block;
     background: #00132b;
@@ -61,6 +62,7 @@ body {
     border-radius: 8px;
 }
 
+/* الفورم */
 .contact h3 {
     margin-top: 25px;
 }
@@ -83,15 +85,10 @@ body {
     margin-top: 5px;
     border-radius: 6px;
     cursor: pointer;
-body {
-    margin: 0;
-    padding: 0;
 }
-    
-    {
-   
+
+/* قسم أعمالي (هيظهر بعد ما نضيفه في HTML) */
 .my-work {
-    display: none;
-    margin: 0;
-    padding: 0;
-}  
+    margin-top: 30px;
+    display: none; /* هنخليه يظهر لما نضيفه */
+}
