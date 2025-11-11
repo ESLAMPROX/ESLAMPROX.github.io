@@ -1,20 +1,20 @@
 body {
-    background: #00132b;
     margin: 0;
+    background: #00132b;
     font-family: Arial, sans-serif;
     text-align: center;
-    overflow-x: hidden;
+    overflow: hidden; /* يمنع السحب والتمديد */
 }
 
-/* كل الكروت */
-.card, .my-work, .contact {
-    max-width: 380px;
-    width: 95%;
-    margin: 20px auto;
+.page {
     background: #fff;
-    padding: 18px;
-    border-radius: 14px;
-    box-shadow: 0 0 8px #00000044;
+    width: 360px; /* حجم ثابت */
+    margin: 0 auto;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    border-left: 2px solid #00132b;
+    border-right: 2px solid #00132b;
 }
 
 /* الصورة */
@@ -24,60 +24,51 @@ body {
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid #00132b;
+    margin-top: 10px;
 }
 
-/* نصوص */
-.bio { font-size: 17px; margin-top: 8px; }
-.details { color: #555; margin: 4px 0 15px; }
+/* النصوص */
+.name { margin: 10px 0 4px; font-size: 22px; }
+.bio { font-size: 16px; margin: 6px 0; }
+.details { color: #444; margin-bottom: 25px; }
 
-/* قسم أعمالي */
-.my-work h3 { margin-bottom: 10px; }
+/* العناوين */
+.section-title {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
 
-/* زر البرنامج */
-.work-link {
+/* زر برنامج pdf */
+.program-btn {
     display: block;
     background: #00132b;
     color: white;
+    padding: 10px;
     text-decoration: none;
-    padding: 12px;
-    border-radius: 10px;
-    margin-top: 10px;
-    font-size: 15px;
-    transition: 0.3s;
+    border-radius: 8px;
 }
-.work-link:hover { background: #003f7a; }
-
 .program-desc {
-    margin-top: 8px;
     font-size: 14px;
-    color: #444;
+    margin-top: 6px;
+    color: #333;
 }
 
-/* تواصل معنا */
-.contact input,
-.contact textarea {
-    width: 100%;
-    padding: 8px;
-    margin: 6px 0;
-    border: 1px solid #888;
-    border-radius: 6px;
-}
-
-.contact button {
+/* أزرار التواصل */
+.social-btn {
+    display: block;
     background: #00132b;
     color: white;
     padding: 10px;
-    width: 100%;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: 0.3s;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 8px;
 }
-.contact button:hover { background: #003f7a; }
 
-/* منع التحديد والتكبير */
+/* منع التكبير والاختيار */
 * {
     -webkit-user-select: none;
     -webkit-touch-callout: none;
 }
-html, body { touch-action: manipulation; }
+html, body { touch-action: none; }
