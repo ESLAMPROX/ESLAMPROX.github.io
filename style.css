@@ -3,24 +3,24 @@ body {
     background: #00132b;
     font-family: Arial, sans-serif;
     text-align: center;
-    overflow: hidden; /* يمنع السحب والتمديد */
+    overflow-y: auto; /* يسمح بالتمرير */
+    overflow-x: hidden; /* منع التحرك يمين وشمال */
 }
 
+/* الصفحة */
 .page {
-    background: #fff;
-    width: 360px; /* حجم ثابت */
-    margin: 0 auto;
-    min-height: 100vh;
-    padding: 20px;
+    background: #ffffff;
+    width: 430px; /* كبرنا العرض */
+    margin: 20px auto; /* مسافة من فوق وتحت */
+    padding: 25px;
+    border-radius: 12px;
     box-sizing: border-box;
-    border-left: 2px solid #00132b;
-    border-right: 2px solid #00132b;
 }
 
 /* الصورة */
 .profile {
-    width: 115px;
-    height: 115px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid #00132b;
@@ -28,47 +28,39 @@ body {
 }
 
 /* النصوص */
-.name { margin: 10px 0 4px; font-size: 22px; }
-.bio { font-size: 16px; margin: 6px 0; }
-.details { color: #444; margin-bottom: 25px; }
+.name { margin: 10px 0 4px; font-size: 23px; font-weight: bold; }
+.bio { font-size: 17px; margin-top: 8px; color: #333; }
+.details { color: #444; margin-bottom: 25px; font-size: 15px; }
 
-/* العناوين */
+/* عنوان الأقسام */
 .section-title {
-    margin-top: 25px;
-    margin-bottom: 10px;
-    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 12px;
+    font-size: 19px;
     font-weight: bold;
+    color: #00132b;
 }
 
-/* زر برنامج pdf */
-.program-btn {
+/* زر برنامج */
+.program-btn, .social-btn {
     display: block;
     background: #00132b;
     color: white;
-    padding: 10px;
+    padding: 12px;
     text-decoration: none;
     border-radius: 8px;
+    margin-top: 10px;
+    font-size: 15px;
 }
+
 .program-desc {
     font-size: 14px;
-    margin-top: 6px;
-    color: #333;
+    margin-top: 7px;
+    color: #222;
 }
 
-/* أزرار التواصل */
-.social-btn {
-    display: block;
-    background: #00132b;
-    color: white;
-    padding: 10px;
-    text-decoration: none;
-    border-radius: 8px;
-    margin-top: 8px;
-}
-
-/* منع التكبير والاختيار */
+/* منع الزوم والاختيار */
 * {
     -webkit-user-select: none;
     -webkit-touch-callout: none;
 }
-html, body { touch-action: none; }
