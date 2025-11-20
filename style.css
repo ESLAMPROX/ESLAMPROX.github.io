@@ -81,3 +81,41 @@ h2 {
   border-radius: 8px;
   font-size: 17px;
 }
+#skills {
+  max-width: 600px;
+  margin: 50px auto;
+  font-family: Arial, sans-serif;
+}
+
+#skills h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill span {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.skill-bar {
+  background: #e0e0e0;
+  border-radius: 25px;
+  overflow: hidden;
+  height: 25px;
+}
+
+.skill-fill {
+  background: #4CAF50;
+  height: 100%;
+  color: white;
+  text-align: right;
+  padding-right: 10px;
+  line-height: 25px;
+  border-radius: 25px;
+}
